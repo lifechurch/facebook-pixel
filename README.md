@@ -1,10 +1,16 @@
-# TSDX User Guide
+# @lifechurch/facebook-pixel
 
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+## Usage
+```javascript
+yarn add @lifechurch/facebook-pixel@latest
+```
 
-> This TSDX setup is meant for developing libraries (not apps!) that can be published to NPM. If you’re looking to build a Node app, you could use `ts-node-dev`, plain `ts-node`, or simple `tsc`.
+```javascript
+import FacebookPixel from '@lifechurch/facebook-pixel';
 
-> If you’re new to TypeScript, checkout [this handy cheatsheet](https://devhints.io/typescript)
+FacebookPixel.init('PIXEL_ID');
+FacebookPixel.pageView();
+```
 
 ## Commands
 
