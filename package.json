@@ -17,7 +17,8 @@
     "lint": "tsdx lint src test types",
     "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "release": "auto shipit"
   },
   "peerDependencies": {},
   "husky": {
@@ -45,11 +46,21 @@
     }
   ],
   "devDependencies": {
+    "@auto-it/released": "^10.25.1",
     "@size-limit/preset-small-lib": "^4.10.2",
+    "auto": "^10.25.1",
     "husky": "^6.0.0",
     "size-limit": "^4.10.2",
     "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4"
+  },
+  "repository": "@lifechurch/facebook-pixel",
+  "auto": {
+    "plugins": [
+      "npm",
+      "released"
+    ],
+    "onlyPublishWithReleaseLabel": true
   }
 }
