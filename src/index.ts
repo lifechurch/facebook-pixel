@@ -140,4 +140,5 @@ export default {
   trackSingleCustom,
   grantConsent,
   revokeConsent,
+  fbq: internalFb,
 };

@@ -96,4 +96,6 @@ The appropriate paths are configured in `package.json` and `dist/index.js` accor
 
 ## Publishing to NPM
 
-We recommend using [np](https://github.com/sindresorhus/np).
+1. Open an MR and assign the appropriate label for semantic versioning bump (major/minor/patch) as well as the `release` label.
+2. A canary release will be made on any branches not `master`.
+3. When merged into `master` the latest tag on NPM will be updated.
